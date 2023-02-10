@@ -15,7 +15,9 @@ Feature: data_tables
     And search for the first name "<firstname>"
     Then verify the name field contains the first name "<firstname>"
     Examples: test_data
-      | firstname | lastname | position | office | extension | start_date | salary |
-      | john      | smith    | tester   | NYC    | 2134      | 2023-01-23 | 80000  |
-      | Sam       | walten   | business | LA     | 6543      | 2023-01-24 | 180000 |
+      | firstname | lastname | position   | office | extension | start_date | salary |
+      | john      | smith    | tester     | NYC    | 2134      | 2023-01-23 | 80000  |
+      | Sam       | walton   | business   | LA     | 6543      | 2023-01-24 | 180000 |
+      | nancy     | brown    | developer  | Dallas | 2346      | 2023-01-25 | 85000  |
+      | george    | bush     | politician | Dallas | 9931      | 2023-01-26 | 985000 |
 

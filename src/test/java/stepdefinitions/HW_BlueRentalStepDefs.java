@@ -1,15 +1,15 @@
 package stepdefinitions;
 import io.cucumber.java.en.*;
 import org.junit.Assert;
-import pages.BlueRentalHomePage;
-import pages.BlueRentalLoginPage;
+import pages.HomePage;
+import pages.LoginPage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-public class BlueRentalStepDefinitions {
+public class HW_BlueRentalStepDefs {
 
-    BlueRentalLoginPage blueRentalLoginPage = new BlueRentalLoginPage();
-    BlueRentalHomePage blueRentalHomePage = new BlueRentalHomePage();
+     LoginPage blueRentalLoginPage = new LoginPage();
+    HomePage blueRentalHomePage = new HomePage();
 
     @Given("user is on blue rental home page")
     public void user_is_on_blue_rental_home_page() {
@@ -19,13 +19,13 @@ public class BlueRentalStepDefinitions {
     @Given("user click on login link")
     public void user_click_on_login_link() {
 
-        blueRentalHomePage.homePageLoginLink.click();
+        blueRentalHomePage.userID.click();
     }
 
     @Given("user enters user name {string}")
     public void user_enters_user_name(String string) {
 
-        blueRentalLoginPage.userName.sendKeys(string);
+        blueRentalLoginPage.username.sendKeys(string);
     }
     @Given("user enters password {string}")
     public void user_enters_password(String string) {
@@ -39,6 +39,7 @@ public class BlueRentalStepDefinitions {
     }
     @Then("verify login is successful")
     public void verify_login_is_successful() {
+
         Assert.assertTrue(blueRentalHomePage.userID.isDisplayed());
     }
 

@@ -15,9 +15,9 @@ import org.junit.runner.RunWith;
         },
         monochrome=true,
         features = "./src/test/resources/features",
-        glue = {"stepdefinitions"},
+        glue = "stepdefinitions",
         dryRun = false,
-        tags = "@parametrizing1"
+        tags = "@youtube"
 )
 public class TestRunner {
 }

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="5.497" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="data_tables" name="customer_login" time="5.248">
+<testsuite name="Cucumber" time="6.112" tests="1" skipped="0" failures="0" errors="0">
+<testcase classname="youtube search feature" name="testing youtube search" time="5.838">
 <system-out><![CDATA[
-Given user is on "https://www.bluerentalcars.com/login" page................passed
-And user enters customer_email and customer_password........................passed
-Then verify the application login is successful.............................passed
-And close the application...................................................passed
+Given user is on the youtube homepage.......................................passed
+And user is able to see the search box......................................passed
+And user is able to see the search button...................................passed
+When user searches for FUNNY CAT VIDEOS.....................................passed
+Then user should see results related to funny cat videos....................passed
 ]]></system-out>
 </testcase>
 </testsuite>

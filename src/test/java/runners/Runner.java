@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",//PATH OF FEATURES FOLDER
         glue = "stepdefinitions", //PATH OF STEP DEFINITIONS
         dryRun = false,
-        tags = "@data_tables_1"
+        tags = "@youtube"
 )
 public class Runner {
 }

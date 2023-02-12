@@ -6,7 +6,6 @@ import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
 import pages.HomePage;
 import pages.LoginPage;
-
 import java.util.List;
 import java.util.Map;
 

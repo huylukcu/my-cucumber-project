@@ -6,9 +6,12 @@ import io.cucumber.datatable.DataTable;
 import org.junit.Assert;
 import pages.HomePage;
 import pages.LoginPage;
+<<<<<<< HEAD
 import utilities.Driver;
 import utilities.ReusableMethods;
 
+=======
+>>>>>>> 3da0023daa5a48c4c09ccbcb812db6d149b0eeae
 import java.util.List;
 import java.util.Map;
 

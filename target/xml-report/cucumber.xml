@@ -1,19 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="10.56" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="hooks_test" name="TC_01_" time="10.266">
-<failure type="java.lang.AssertionError">
-<![CDATA[java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.LoginStepDefinitions.verify_the_next_page_url_contains_login_keyword(LoginStepDefinitions.java:45)
-	at ✽.verify the next page url contains login keyword(file:///Users/hyry/IdeaProjects/my-cucumber-project/./src/test/resources/features/day26_failed_test_cases.feature:9)
-]]>
-</failure>
+<testsuite name="Cucumber" time="0.385" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="excel_login_feature" name="TC_customer_credentials_test" time="0.044">
+<failure/>
 <system-out><![CDATA[
-Given user is on "https://www.bluerentalcars.com/login" page................passed
-And user enters customer_email and customer_password........................passed
-Then verify the next page url contains login keyword........................failed
+Given user tries to login as "customer".....................................undefined
+Then verify the application login is successful.............................skipped
+Then capture the screenshot.................................................skipped
+Then close the application..................................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

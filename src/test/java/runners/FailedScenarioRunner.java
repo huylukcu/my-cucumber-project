@@ -1,5 +1,4 @@
 package runners;
-
 import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
@@ -14,11 +13,15 @@ import org.junit.runner.RunWith;
                 "rerun:target/failedRerun.txt"
         },
         monochrome=true,
-        features = "./src/test/resources/features",
-        glue = "stepdefinitions",
-        dryRun = false,
-        tags = "@parametrizing1"
+        features = "@target/failedRerun.txt",
+        glue = {"stepdefinitions", "hooks"},
+        dryRun = false
 )
-public class TestRunner {
+public class FailedScenarioRunner {
 }
-
+/*
+This runner class is used to run only failedRerun.txt file
+That file only has failed scenarios if any scenario fails
+That file will be empty if no scenario fails
+We do not use tag or path of the features folder
+ */

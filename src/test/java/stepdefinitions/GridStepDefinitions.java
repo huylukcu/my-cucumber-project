@@ -10,6 +10,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 import java.time.Duration;
 public class GridStepDefinitions {
+    
     WebDriver driver;
     @Given("user is on the application_url using chrome")
     public void user_is_on_the_application_url_using_chrome() throws MalformedURLException {
@@ -42,5 +43,6 @@ public class GridStepDefinitions {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
         driver.get("https://www.techproeducation.com");
+        
     }
 }

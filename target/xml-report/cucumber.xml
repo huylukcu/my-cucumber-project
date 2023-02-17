@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.928" tests="1" skipped="0" failures="0" errors="0">
-<testcase classname="db_customer_testing" name="TC01_read_customer_ssn_info" time="0.728">
+<testsuite name="Cucumber" time="0.322" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="url_feature" name="TC01_open_URLs" time="0.102">
+<failure/>
 <system-out><![CDATA[
-Given user connects to the application database.............................passed
+When I open "https://bluerentalcars.com" page...............................undefined
+When i open "https://amazon.com" page.......................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

@@ -22,7 +22,7 @@ public class Hooks {
             Driver.closeDriver();
         }
     }
-    //    This Before hooks ONLY RUNS for @smoke_test TAGGED SCENARIOS
+//    This Before hooks ONLY RUNS for @smoke_test TAGGED SCENARIOS
 //    @Before(value = "@smoke_tests")
     @Before("@smoke_tests")
     public void setUpSmokeScenarios(){

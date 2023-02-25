@@ -35,7 +35,6 @@ public class LoginStepDefinitions {
             loginPage.loginButton.click();
         }
     }
-
     @Then("verify the application login is successful")
     public void verify_the_application_login_is_successful() {
 

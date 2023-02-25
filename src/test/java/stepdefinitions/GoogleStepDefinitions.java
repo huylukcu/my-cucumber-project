@@ -51,7 +51,6 @@ public class GoogleStepDefinitions {
 
     }
 
-
     @When("user search for {string} on google")
     public void user_search_for_on_google(String string) {
         googlePage.searchBox.sendKeys(string + Keys.ENTER);
@@ -62,5 +61,4 @@ public class GoogleStepDefinitions {
     public void verify_page_title_contains(String string) {
         Assert.assertTrue(Driver.getDriver().getTitle().contains(string));
     }
-
 }

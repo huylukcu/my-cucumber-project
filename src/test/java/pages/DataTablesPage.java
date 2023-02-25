@@ -9,7 +9,6 @@ public class DataTablesPage {
     public DataTablesPage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-
     @FindBy(xpath = "//span[.='New']")
     public WebElement newButton;
     @FindBy(id = "DTE_Field_first_name")
@@ -32,7 +31,6 @@ public class DataTablesPage {
     public WebElement searchBox;
     @FindBy(xpath = "(//td[@class='sorting_1'])[1]")
     public WebElement nameColumn;
-
 
 
 }

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cucumber" time="0.322" tests="1" skipped="0" failures="1" errors="0">
-<testcase classname="url_feature" name="TC01_open_URLs" time="0.102">
+<testsuite name="Cucumber" time="0.381" tests="1" skipped="0" failures="1" errors="0">
+<testcase classname="Room Creation" name="TC03_Post_Request" time="0.117">
 <failure/>
 <system-out><![CDATA[
-When I open "https://bluerentalcars.com" page...............................undefined
-When i open "https://amazon.com" page.......................................skipped
+Given user sends post request for room data and.............................undefined
+Then user get the room data and validates...................................skipped
 ]]></system-out>
 </testcase>
 </testsuite>

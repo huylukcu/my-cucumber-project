@@ -1,15 +1,13 @@
 package utilities;
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.ResultSet;
-import java.sql.ResultSetMetaData;
-import java.sql.SQLException;
-import java.sql.Statement;
+
+import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 public class DBUtils {
+
     //    connection : used to connect to DB
     private static Connection connection;
     //    statement : used to write queries
@@ -20,26 +18,24 @@ public class DBUtils {
      * DBUtils.createConnection(); -> to connect to teh database
      */
     public static void createConnection() {
-        String url = "jdbc:postgresql://157.230.48.97:5432/gmibank_db";
-        String username="techprodb_user";
-        String password="Techpro_@126";
+        String url = "jdbc:postgresql://MEDUNNA.COM:5432/medunna_db_v2";
+        String username="select_user";
+        String password="Medunna_pass_@6";
         try {
             connection = DriverManager.getConnection(url, username, password);
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
     }
     /**
      * DBUtils.executeQuery(String query); -> Execute the query and store is the result set object
-     * STATEMENT : is used to write query
      */
     public static void executeQuery(String query) {
         try {
             statement = connection.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE, ResultSet.CONCUR_READ_ONLY);
         } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            // TODO Auto-generated catch block
+
             e.printStackTrace();
         }
         try {
@@ -65,18 +61,7 @@ public class DBUtils {
             e.printStackTrace();
         }
     }
-    public static Connection getConnection() {
-        String url = "jdbc:sqlserver://184.168.194.58:1433;databaseName=crystalkeyhotels2;user=Ahmet_User;password=Ahmet123!";
-        String username="Ahmet_User";
-        String password="Ahmet123!";
-        try {
-            connection = DriverManager.getConnection(url, username, password);
-        } catch (SQLException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-        return connection;
-    }
+
     //used to get statement
     public static Statement getStatement() {
         try {

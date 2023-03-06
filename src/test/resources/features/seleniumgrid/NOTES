@@ -112,3 +112,4 @@ public class GridStepDefinitions {
 4. What is NODE?
     *Node is a virtual machine. We can create multiple nodes using the hub
     *java -jar selenium-server-4.8.0.jar node
+

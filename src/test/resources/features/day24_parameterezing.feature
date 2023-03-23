@@ -6,3 +6,4 @@ Feature: Search_Feature
     Scenario: TC01_tesla_search
     When user search for "tesla" on google
 #      "" is used to parametrize feature file
+

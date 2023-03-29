@@ -19,5 +19,4 @@ public class RegExStepDefinitions {
         Driver.getDriver().get(string);
     }
 
-
 }
